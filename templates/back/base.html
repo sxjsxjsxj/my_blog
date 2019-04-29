@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <head>
+        {% block meta %}
+        {% endblock %}
+        <title>
+            {% block title %}
+            {% endblock %}
+        </title>
+        <!--导入JS、CSS-->
+        {% block link %}
+        {% endblock %}
+    </head>
+    <body class="user-select">
+
+        <section class="container-fluid">
+            {% block navbar %}
+            {% endblock %}
+            <div class="row">
+                {% block sidebar %}
+                {% endblock %}
+
+                {% block main %}
+                {% endblock %}
+            </div>
+        </section>
+        <!--其他功能-->
+        {% block other %}
+        {% endblock %}
+
+        <!--导入JS2-->
+        {% block link2 %}
+        {% endblock %}
+
+    </body>
+</html>
